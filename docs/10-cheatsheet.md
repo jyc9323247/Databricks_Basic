@@ -68,7 +68,7 @@ df.coalesce(10)                                                         # 30. íŒ
 
 ```sql
 -- DDL
-CREATE TABLE IF NOT EXISTS c.s.t (id BIGINT, name STRING) USING DELTA;  -- 1
+CREATE TABLE IF NOT EXISTS c.s.t (id BIGINT, name STRING);               -- 1
 CREATE OR REPLACE TABLE c.s.t AS SELECT * FROM source;                   -- 2 (CTAS)
 ALTER TABLE c.s.t ADD COLUMNS (new_col STRING);                          -- 3
 
